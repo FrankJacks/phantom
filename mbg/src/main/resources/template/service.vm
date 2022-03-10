@@ -1,0 +1,19 @@
+package com.jldt.phantom.facade.service.$!{moduleName};
+
+import com.jldt.phantom.common.base.BaseService;
+import com.jldt.phantom.facade.entity.$!{moduleName}.$!{CLASS_NAME_UPCASE}Entity;
+
+/**
+ * @Copyright (C), 2018, 上海金皿计算机科技有限公司
+ * @ProjectName: Phantom
+ * @FileName: $!{fileName}
+ * @Author: system
+ * @Date: $!{createDate}
+ * @Description:
+ * @email ==>> quzhigang@midaigroup.com | jing9241120@sina.com
+ * @History: <author>          <time>          <version>          <desc>
+ * 作者姓名           修改时间           版本号              描述
+ */
+public interface $!{CLASS_NAME_UPCASE}Service extends BaseService<$!{CLASS_NAME_UPCASE}Entity> {
+
+}

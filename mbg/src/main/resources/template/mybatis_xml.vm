@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jldt.phantom.$!{moduleName}.mapper.$!{CLASS_NAME_UPCASE}Mapper">
+	<resultMap type="com.jldt.phantom.facade.entity.$!{moduleName}.$!{CLASS_NAME_UPCASE}Entity"
+			   id="$!{CLASS_NAME_UPCASE}EntityMap">
+
+	    	 #foreach($f in ${filds})
+	    	    #if($velocotyCount==1)
+		<id property="$!{f.fild}" column="$!{f.columnName}" />
+	    	    #else
+		<result property="$!{f.fild}" column="$!{f.columnName}" />
+	    	    #end
+			 #end	
+		</resultMap>
+
+</mapper>

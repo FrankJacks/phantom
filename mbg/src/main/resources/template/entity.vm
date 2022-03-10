@@ -1,0 +1,49 @@
+package com.jldt.phantom.facade.entity.$!{moduleName};
+
+import com.jldt.phantom.common.base.BaseEntity;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
+/**
+ * @Copyright (C), 2018, 上海金皿计算机科技有限公司
+ * @ProjectName: Phantom
+ * @FileName: $!{fileName}
+ * @Author: system
+ * @Date: $!{createDate}
+ * @Description:
+ * @email ==>> quzhigang@midaigroup.com | jing9241120@sina.com
+ * @History: <author>          <time>          <version>          <desc>
+ * 作者姓名           修改时间           版本号              描述
+ */
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@EqualsAndHashCode(callSuper = false)
+@Table(name = "$!{talbeName}")
+public class $!{CLASS_NAME_UPCASE}Entity extends BaseEntity implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    #foreach($f in ${filds})#if($!{f.fild} == "id")@Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private $!{f.type} $!{f.fild};
+		#elseif($!{f.fild} == "createTime" || $!{f.fild} == "updateTime" || $!{f.fild} == "createBy" || $!{f.fild} == "updateBy")
+#else
+/** $!{f.fildComment}*/
+    @Column(name = "$!{f.columnName}")
+    private $!{f.type} $!{f.fild};
+		#end
+	 #end
+
+		
+}

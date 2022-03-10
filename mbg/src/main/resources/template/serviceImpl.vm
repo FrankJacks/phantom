@@ -1,0 +1,31 @@
+package com.jldt.phantom.$!{moduleName}.service.impl;
+
+import org.springframework.stereotype.Service;
+import com.jldt.phantom.$!{moduleName}.mapper.$!{CLASS_NAME_UPCASE}Mapper;
+import com.jldt.phantom.common.base.BaseServiceImpl;
+import com.jldt.phantom.facade.entity.$!{moduleName}.$!{CLASS_NAME_UPCASE}Entity;
+import com.jldt.phantom.facade.service.$!{moduleName}.$!{CLASS_NAME_UPCASE}Service;
+
+
+/**
+ * @Copyright (C), 2018, 上海金皿计算机科技有限公司
+ * @ProjectName: Phantom
+ * @FileName: $!{fileName}
+ * @Author: system
+ * @Date: $!{createDate}
+ * @Description:
+ * @email ==>> quzhigang@midaigroup.com | jing9241120@sina.com
+ * @History: <author>          <time>          <version>          <desc>
+ * 作者姓名           修改时间           版本号              描述
+ */
+@Service
+public class $!{CLASS_NAME_UPCASE}ServiceImpl extends BaseServiceImpl<$!{CLASS_NAME_UPCASE}Entity> implements $!{CLASS_NAME_UPCASE}Service {
+
+    private final $!{CLASS_NAME_UPCASE}Mapper $!{CLASS_NAME_LOWCASE}Mapper;
+
+    public $!{CLASS_NAME_UPCASE}ServiceImpl($!{CLASS_NAME_UPCASE}Mapper $!{CLASS_NAME_LOWCASE}Mapper) {
+    	super($!{CLASS_NAME_LOWCASE}Mapper);
+    	this.$!{CLASS_NAME_LOWCASE}Mapper = $!{CLASS_NAME_LOWCASE}Mapper;
+    }
+
+}
