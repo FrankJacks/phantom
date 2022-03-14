@@ -5,6 +5,7 @@ import com.jldt.phantom.search.dao.EsProductDao;
 import com.jldt.phantom.search.domain.EsProduct;
 import com.jldt.phantom.search.domain.EsProductRelatedInfo;
 import com.jldt.phantom.search.service.EsProductService;
+import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.common.lucene.search.function.FunctionScoreQuery;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
@@ -47,9 +48,9 @@ import java.util.stream.Collectors;
  * 商品搜索管理Service实现类
  * Created by 史俊鹏 on 2018/6/19.
  */
+@Slf4j
 @Service
 public class EsProductServiceImpl implements EsProductService {
-    private static final Logger LOGGER = LoggerFactory.getLogger(EsProductServiceImpl.class);
     @Autowired
     private EsProductDao productDao;
     @Autowired
@@ -158,7 +159,7 @@ public class EsProductServiceImpl implements EsProductService {
         }
         nativeSearchQueryBuilder.withSort(SortBuilders.scoreSort().order(SortOrder.DESC));
         NativeSearchQuery searchQuery = nativeSearchQueryBuilder.build();
-        LOGGER.info("DSL:{}", searchQuery.getQuery().toString());
+        log.info("DSL:{}", searchQuery.getQuery().toString());
         SearchHits<EsProduct> searchHits = elasticsearchRestTemplate.search(searchQuery, EsProduct.class);
         if(searchHits.getTotalHits()<=0){
             return new PageImpl<>(null,pageable,0);
@@ -202,7 +203,7 @@ public class EsProductServiceImpl implements EsProductService {
             builder.withFilter(boolQueryBuilder);
             builder.withPageable(pageable);
             NativeSearchQuery searchQuery = builder.build();
-            LOGGER.info("DSL:{}", searchQuery.getQuery().toString());
+            log.info("DSL:{}", searchQuery.getQuery().toString());
             SearchHits<EsProduct> searchHits = elasticsearchRestTemplate.search(searchQuery, EsProduct.class);
             if(searchHits.getTotalHits()<=0){
                 return new PageImpl<>(null,pageable,0);

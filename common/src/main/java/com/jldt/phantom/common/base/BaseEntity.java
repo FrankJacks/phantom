@@ -1,5 +1,6 @@
 package com.jldt.phantom.common.base;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,18 +9,17 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @Copyright (C), 2018, 上海金皿计算机科技有限公司
+ * @Copyright (C), 2018, 久瓴（上海）科技有限公
  * @ProjectName: Phantom
  * @FileName: BaseEntity
- * @Author: 屈志刚
+ * @Author: 史俊鹏
  * @Date: 2019/5/3/003 下午 10:30
  * @Description:
- * @email ==>> jing9241120@sina.com
+ * @email ==>> shijunpeng@jlkj.net
  * @History: <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-@Getter
-@Setter
+@Data
 public class BaseEntity implements Serializable {
 
     public static final String FIELD_CREATE_TIME = "createTime";

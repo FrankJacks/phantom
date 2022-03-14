@@ -10,6 +10,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan({"com.jldt.phantom.mapper","com.jldt.phantom.portal.dao"})
+@MapperScan({"com.jldt.phantom.portal.mapper","com.jldt.phantom.portal.dao"})
 public class MyBatisConfig {
 }

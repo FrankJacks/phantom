@@ -1,9 +1,9 @@
 package com.jldt.phantom.portal.service.impl;
 
-import com.jldt.phantom.mapper.UmsMemberReceiveAddressMapper;
-import com.jldt.phantom.model.UmsMemberReceiveAddress;
-import com.jldt.phantom.model.UmsMemberReceiveAddressExample;
-import com.jldt.phantom.model.UmsMember;
+import com.jldt.phantom.mgb.mapper.UmsMemberReceiveAddressMapper;
+import com.jldt.phantom.mgb.model.UmsMember;
+import com.jldt.phantom.mgb.model.UmsMemberReceiveAddress;
+import com.jldt.phantom.mgb.model.UmsMemberReceiveAddressExample;
 import com.jldt.phantom.portal.service.UmsMemberReceiveAddressService;
 import com.jldt.phantom.portal.service.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;

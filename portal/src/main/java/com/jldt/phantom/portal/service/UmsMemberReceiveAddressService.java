@@ -1,6 +1,6 @@
 package com.jldt.phantom.portal.service;
 
-import com.jldt.phantom.model.UmsMemberReceiveAddress;
+import com.jldt.phantom.mgb.model.UmsMemberReceiveAddress;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

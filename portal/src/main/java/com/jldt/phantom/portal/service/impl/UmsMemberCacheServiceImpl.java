@@ -2,7 +2,7 @@ package com.jldt.phantom.portal.service.impl;
 
 import com.jldt.phantom.common.annotation.CacheException;
 import com.jldt.phantom.common.service.RedisService;
-import com.jldt.phantom.model.UmsMember;
+import com.jldt.phantom.mgb.model.UmsMember;
 import com.jldt.phantom.portal.service.UmsMemberCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

@@ -2,7 +2,7 @@ package com.jldt.phantom.portal.controller;
 
 import com.jldt.phantom.common.api.CommonResult;
 import com.jldt.phantom.common.domain.UserDto;
-import com.jldt.phantom.model.UmsMember;
+import com.jldt.phantom.mgb.model.UmsMember;
 import com.jldt.phantom.portal.service.UmsMemberService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

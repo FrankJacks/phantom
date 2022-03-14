@@ -5,7 +5,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * 定时任务相关配置
- * Created by 史俊鹏 on 2021/12/8.
+ *
+ * @author 史俊鹏
+ * @date 2021/12/8
  */
 @Configuration
 @EnableScheduling

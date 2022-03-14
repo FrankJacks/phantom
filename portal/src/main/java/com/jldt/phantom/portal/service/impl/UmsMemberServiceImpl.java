@@ -5,17 +5,17 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.digest.BCrypt;
 import cn.hutool.json.JSONUtil;
-import com.jldt.phantom.mapper.UmsMemberMapper;
 import com.jldt.phantom.common.api.CommonResult;
 import com.jldt.phantom.common.api.ResultCode;
 import com.jldt.phantom.common.constant.AuthConstant;
 import com.jldt.phantom.common.domain.UserDto;
 import com.jldt.phantom.common.exception.Asserts;
-import com.jldt.phantom.mapper.UmsMemberLevelMapper;
-import com.jldt.phantom.model.UmsMember;
-import com.jldt.phantom.model.UmsMemberExample;
-import com.jldt.phantom.model.UmsMemberLevel;
-import com.jldt.phantom.model.UmsMemberLevelExample;
+import com.jldt.phantom.mgb.mapper.UmsMemberLevelMapper;
+import com.jldt.phantom.mgb.mapper.UmsMemberMapper;
+import com.jldt.phantom.mgb.model.UmsMember;
+import com.jldt.phantom.mgb.model.UmsMemberExample;
+import com.jldt.phantom.mgb.model.UmsMemberLevel;
+import com.jldt.phantom.mgb.model.UmsMemberLevelExample;
 import com.jldt.phantom.portal.service.AuthService;
 import com.jldt.phantom.portal.service.UmsMemberCacheService;
 import com.jldt.phantom.portal.service.UmsMemberService;
@@ -36,7 +36,6 @@ import java.util.*;
  */
 @Service
 public class UmsMemberServiceImpl implements UmsMemberService {
-    private static final Logger LOGGER = LoggerFactory.getLogger(UmsMemberServiceImpl.class);
     @Autowired
     private UmsMemberMapper memberMapper;
     @Autowired

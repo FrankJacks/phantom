@@ -1,6 +1,7 @@
 package com.jldt.phantom.portal.service;
 
-import com.jldt.phantom.model.UmsMember;
+
+import com.jldt.phantom.mgb.model.UmsMember;
 
 /**
  * 会员信息缓存业务类

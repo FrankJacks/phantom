@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class DemoController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(DemoController.class);
-
     @ApiOperation(value = "测试分页列表")
     @RequestMapping(value = "/test/list", method = RequestMethod.GET)
     @ResponseBody

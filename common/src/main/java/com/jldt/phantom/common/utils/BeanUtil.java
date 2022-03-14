@@ -13,7 +13,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * @Copyright (C), 2018, 上海金皿计算机科技有限公司
+ * @Copyright (C), 2018, 久瓴（上海）科技有限公
  * @ProjectName: Phantom
  * @FileName: BeanUtil
  * @Author: 曹旭楠

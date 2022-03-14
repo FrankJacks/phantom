@@ -2,7 +2,7 @@
 
 ## 项目介绍
 
-`phantom`是一套微服务数字孪生系统，采用了 Spring Cloud Hoxton & Alibaba、Spring Boot 2.3、Oauth2、MyBatis、Elasticsearch、Docker、Kubernetes等核心技术，同时提供了基于Vue的管理后台方便快速搭建系统。`phantom`在园区业务的基础集成了注册中心、配置中心、监控中心、网关等系统功能。 
+`phantom`是一套微服务数字孪生系统，采用了 Spring Cloud Hoxton & Alibaba、Spring Boot 2.3、Oauth2、MyBatis、Elasticsearch、Docker、Kubernetes等核心技术，同时提供了基于Vue的管理后台方便快速搭建系统。`phantom`在业务的基础集成了注册中心、配置中心、监控中心、网关等系统功能。 
 
 ## 系统架构图
 
@@ -19,7 +19,7 @@ phantom
 ├── monitor -- 基于Spring Boot Admin的微服务监控中心
 ├── admin -- 后台管理系统服务
 ├── search -- Elasticsearch搜索服务
-├── portal -- 移动端园区系统服务
+├── portal -- 移动端系统服务
 ├── demo -- 微服务远程调用测试服务
 └── config -- 配置中心存储的配置
 ```

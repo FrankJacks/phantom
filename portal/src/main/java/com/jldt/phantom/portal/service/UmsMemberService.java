@@ -1,8 +1,8 @@
 package com.jldt.phantom.portal.service;
 
-import com.jldt.phantom.model.UmsMember;
 import com.jldt.phantom.common.api.CommonResult;
 import com.jldt.phantom.common.domain.UserDto;
+import com.jldt.phantom.mgb.model.UmsMember;
 import org.springframework.transaction.annotation.Transactional;
 
 /**

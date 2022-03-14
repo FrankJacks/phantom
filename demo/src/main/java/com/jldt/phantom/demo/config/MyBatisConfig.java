@@ -8,6 +8,6 @@ import org.springframework.context.annotation.Configuration;
  * Created by 史俊鹏 on 2021/12/8.
  */
 @Configuration
-@MapperScan("com.jldt.phantom.mapper")
+@MapperScan("com.jldt.phantom.demo.mapper")
 public class MyBatisConfig {
 }

@@ -1,4 +1,4 @@
-package com.jldt.phantom.facade.dto.$!{moduleName};
+package com.jldt.phantom.common.facade.dto.$!{moduleName};
 
 
 import java.io.Serializable;

@@ -3,18 +3,18 @@ package com.jldt.phantom.$!{moduleName}.service.impl;
 import org.springframework.stereotype.Service;
 import com.jldt.phantom.$!{moduleName}.mapper.$!{CLASS_NAME_UPCASE}Mapper;
 import com.jldt.phantom.common.base.BaseServiceImpl;
-import com.jldt.phantom.facade.entity.$!{moduleName}.$!{CLASS_NAME_UPCASE}Entity;
-import com.jldt.phantom.facade.service.$!{moduleName}.$!{CLASS_NAME_UPCASE}Service;
+import com.jldt.phantom.common.facade.entity.$!{moduleName}.$!{CLASS_NAME_UPCASE}Entity;
+import com.jldt.phantom.$!{moduleName}.service.$!{CLASS_NAME_UPCASE}Service;
 
 
 /**
- * @Copyright (C), 2018, 上海金皿计算机科技有限公司
+ * @Copyright (C), 2018, 久瓴（上海）科技有限公
  * @ProjectName: Phantom
  * @FileName: $!{fileName}
  * @Author: system
  * @Date: $!{createDate}
  * @Description:
- * @email ==>> quzhigang@midaigroup.com | jing9241120@sina.com
+ * @email ==>> quzhigang@midaigroup.com | shijunpeng@jlkj.net
  * @History: <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
